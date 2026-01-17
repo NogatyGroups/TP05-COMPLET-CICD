@@ -62,4 +62,4 @@ jobs:
     
     - name: Get EB Logs on failure
       if: failure()
-      run: eb logs --last
+      run: eb logs $EB_ENV_NAME
