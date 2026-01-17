@@ -21,12 +21,13 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+    - name: Print environment variables
+      run: printenv
 
     - name: Build the application
       env:
         environmentKey : ${{ secrets.NEXT_PUBLIC_ENVIRONMENT_KEY }}
       run: npm run build
-
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
