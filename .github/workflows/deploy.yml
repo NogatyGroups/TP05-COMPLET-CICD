@@ -59,3 +59,7 @@ jobs:
 
         # Deploy to Elastic Beanstalk
         eb deploy $EB_ENV_NAME
+    
+    - name: Get EB Logs on failure
+      if: failure()
+      run: eb logs --last
