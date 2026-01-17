@@ -34,7 +34,7 @@ jobs:
 
     - name: Build the application
       env:
-        environmentKey : ${{ secrets.NEXT_PUBLIC_ENVIRONMENT_KEY }}
+        FLAGSMITH_KEY: ${{ secrets.NEXT_PUBLIC_ENVIRONMENT_KEY }}
         NEXT_PUBLIC_ENVIRONMENT_KEY: ${{ secrets.NEXT_PUBLIC_ENVIRONMENT_KEY }}
       run: npm run build
 
