@@ -23,7 +23,7 @@ jobs:
 
     - name: Build the application
       env:
-        NEXT_PUBLIC_ENVIRONMENT_KEY: ${{ secrets.NEXT_PUBLIC_ENVIRONMENT_KEY }}
+        environmentKey : ${{ secrets.NEXT_PUBLIC_ENVIRONMENT_KEY }}
       run: npm run build
 
 
