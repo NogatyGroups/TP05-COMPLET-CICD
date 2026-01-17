@@ -3,6 +3,7 @@ const nextConfig = {
   /**experimental: {
     appDir: true,
   }, */
+  serverExternalPackages : ['jsonpath'],
 };
 
 module.exports = nextConfig;
